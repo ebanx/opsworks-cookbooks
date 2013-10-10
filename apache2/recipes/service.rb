@@ -13,7 +13,7 @@ service 'apache2' do
           'default' => "sleep 1 && /sbin/service httpd #{srv_cmd} && sleep 1"
         },
         ['debian','ubuntu'] => {
-          'default' => "sleep 1 && /etc/init.d/apache2 #{srv_cmd} && sleep 1"
+          'default' => "sleep 5 && /etc/init.d/apache2 #{srv_cmd} && sleep 5"
         }
       )
     )
