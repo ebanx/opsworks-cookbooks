@@ -8,5 +8,5 @@ when /1.8/
   default['opsworks_rubygems']['setup_command'] = "/usr/bin/env LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 /usr/local/bin/ruby setup.rb --no-rdoc --no-ri"
 else
   # set --disable-gems for Ruby 1.9 and later
-  default['opsworks_rubygems']['setup_command'] = "/usr/bin/env LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 /usr/local/bin/ruby --disable-gems setup.rb --no-rdoc --no-ri"
+  default['opsworks_rubygems']['setup_command'] = "/usr/bin/env LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 /usr/local/bin/ruby setup.rb --no-rdoc --no-ri"
 end
